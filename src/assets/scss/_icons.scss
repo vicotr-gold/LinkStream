@@ -1,0 +1,164 @@
+.ico {
+    display: inline-block;
+    line-height: 0;
+}
+
+.ico:before {
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ico-drag {
+    cursor: move;
+    &:before {
+        background-image: url(~@/assets/img/ico/drag.svg);
+        width: 18px;
+        height: 14px;
+    }
+}
+
+.ico-eye-cir-gray:before {
+    background-image: url(~@/assets/img/ico/eye-cir-gray.svg);
+    width: 35px;
+    height: 35px;
+}
+
+.ico-eye-slash-cir-gray:before {
+    background-image: url(~@/assets/img/ico/eye-slash-cir-gray.svg);
+    width: 35px;
+    height: 35px;
+}
+
+.ico-back:before {
+    background-image: url(~@/assets/img/ico/back.svg);
+    width: 17px;
+    height: 17px;
+}
+
+.ico-select-arrow:before {
+    background-image: url(~@/assets/img/ico/select-arrow.svg);
+    width: 15px;
+    height: 15px;
+}
+
+.ico-timepicker:before {
+    background-image: url(~@/assets/img/ico/timepicker.svg);
+    width: 19px;
+    height: 19px;
+}
+
+.ico-remove:before {
+    background-image: url(~@/assets/img/ico/remove.svg);
+    width: 32px;
+    height: 31px;
+}
+
+.ico-cam:before {
+    background-image: url(~@/assets/img/ico/cam.svg);
+    width: 21px;
+    height: 19px;
+}
+
+.ico-close:before {
+    background-image: url(~@/assets/img/ico/close.svg);
+    width: 13px;
+    height: 13px;
+}
+
+.ico-close-lg:before {
+    background-image: url(~@/assets/img/ico/close-lg.svg);
+    width: 16px;
+    height: 16px;
+}
+
+.ico-trash-sm:before {
+    background-image: url(~@/assets/img/ico/trash-sm.svg);
+    width: 35px;
+    height: 35px;
+}
+
+.ico-clock-cir-gray:before {
+    background-image: url(~@/assets/img/ico/clock-cir-gray.svg);
+    width: 35px;
+    height: 35px;
+}
+
+.ico-cloud-upload-lg:before {
+    background-image: url(~@/assets/img/ico/cloud-upload-lg.svg);
+    width: 50px;
+    height: 50px;
+}
+
+.ico-song:before {
+    background-image: url(~@/assets/img/ico/song.svg);
+    width: 114px;
+    height: 114px;
+}
+
+.ico-beat:before {
+    background-image: url(~@/assets/img/ico/beat.svg);
+    width: 114px;
+    height: 114px;
+}
+
+.ico-plus:before {
+    background-image: url(~@/assets/img/ico/plus.svg);
+    width: 14px;
+    height: 14px;
+}
+
+.ico-search {
+    background-image: url(~@/assets/img/ico/search.svg);
+    width: 16px;
+    height: 16px;
+}
+
+.ico-dot-menu-v {
+    background-image: url(~@/assets/img/ico/dot-menu-v.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.ico-envelope-open {
+    background-image: url(~@/assets/img/ico/envelope-open.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.ico-streamy {
+    background-image: url(~@/assets/img/ico/social-streamy.svg);
+    width: 22px;
+    height: 24px;
+}
+
+.ico-twitter {
+    background-image: url(~@/assets/img/ico/social-twitter.svg);
+    width: 23px;
+    height: 19px;
+}
+
+.ico-soundcloud {
+    background-image: url(~@/assets/img/ico/social-soundcloud.svg);
+    width: 29px;
+    height: 14px;
+}
+
+.ico-ig {
+    background-image: url(~@/assets/img/ico/social-ig.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.ico-dollar {
+    background-image: url(~@/assets/img/ico/dollar.svg);
+    width: 8px;
+    height: 15px;
+}
+
+.ico-music-note {
+    background-image: url(~@/assets/img/ico/music-note.svg);
+    width: 30px;
+    height: 30px;
+}

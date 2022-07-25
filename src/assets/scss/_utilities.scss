@@ -1,0 +1,27 @@
+// Font sizes
+@each $breakpoint in map_keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        @each $index, $value in $font-sizes {
+            .fs#{$infix}-#{$index} {
+                font-size: $value;
+            }
+        }
+    }
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-primary-underline {
+    color: $primary;
+    text-decoration: underline;
+}
+
+.text-hint {
+    color: $gray-520;
+    font-size: px2rem(12);
+    line-height: 30px;
+    line-height: normal;
+}

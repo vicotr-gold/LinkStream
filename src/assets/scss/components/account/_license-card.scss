@@ -1,0 +1,77 @@
+.LicenseCard {
+    padding: 15px 20px;
+
+    .view-section {
+        display: flex;
+        align-items: center;
+        .form-group {
+            margin-bottom: 0;
+        }
+    }
+
+    .edit-section {
+        display: none;
+        margin-top: 5px;
+    }
+
+    .edit-form {
+        margin-top: 15px;
+    }
+
+    .card-body {
+        flex: 1;
+        margin-left: 10px;
+    }
+
+    .card-title {
+        line-height: 15px;
+    }
+
+    .card-close-btn {
+        display: none;
+    }
+
+    .card-edit-actions {
+        flex-direction: column;
+        margin-top: 30px;
+        .left-col {
+            order: 1;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .right-col {
+            display: flex;
+            .btn {
+                margin: 0;
+                width: 50%;
+            }
+            .cancel-btn {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &.is-editing {
+        .card-edit-btn {
+            visibility: hidden;
+        }
+        .card-close-btn,
+        .edit-section {
+            display: block;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .edit-form {
+            margin: 0 37px;
+        }
+        .card-edit-actions {
+            flex-direction: row;
+            .left-col {
+                text-align: left;
+                order: 0;
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.page-license-edit {
+    .page-header {
+        border-bottom: 1px solid $gray-410;
+        padding-bottom: 15px;
+        .right-col {
+            margin-top: 15px;
+        }
+    }
+
+    .page-body {
+        label {
+            font-size: px2rem(14);
+            font-weight: 600;
+            letter-spacing: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .page-footer {
+        text-align: right;
+        border-top: 1px solid $gray-330;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+
+    .viz-toggle {
+        display: flex;
+        align-items: center;
+        .toggle-label {
+            order: 2;
+            font-size: px2rem(12);
+            font-weight: 500;
+            letter-spacing: 0;
+            margin-left: 10px;
+        }
+    }
+
+    .form-row {
+        flex-direction: column;
+        margin: 0 0 30px 0;
+        flex-wrap: nowrap;
+        &.no-wrap {
+            flex-direction: row;
+            .form-col:first-child {
+                flex-grow: 1;
+            }
+        }
+        .form-col:first-child {
+            align-self: center;
+            width: 100%;
+        }
+    }
+
+    .form-text {
+        color: $black;
+        font-size: px2rem(12);
+        letter-spacing: 0;
+    }
+
+    .default-text {
+        color: $gray-550;
+        font-size: px2rem(14);
+        font-style: italic;
+        letter-spacing: 0;
+        margin-top: 10px;
+    }
+
+    .money-input {
+        input {
+            width: 125px;
+        }
+    }
+
+    .UnlimitedInputGroup {
+        margin-top: 10px;
+    }
+
+    @include media-breakpoint-up(md) {
+        .page-header {
+            .right-col {
+                margin-top: 0;
+            }
+        }
+
+        .viz-toggle {
+            .toggle-label {
+                order: 0;
+                margin: 0 10px 0 0;
+            }
+        }
+
+        .form-row {
+            flex-direction: row;
+            &.no-wrap {
+                .form-col:first-child {
+                    flex-grow: 0;
+                }
+            }
+            .form-col {
+                &:first-child {
+                    flex-basis: 40%;
+                }
+                &:last-child {
+                    flex-basis: 60%;
+                }
+            }
+        }
+
+        .UnlimitedInputGroup {
+            margin-top: 0;
+            .form-control {
+                width: 185px;
+            }
+        }
+
+        .default-text {
+            margin-top: 0;
+        }
+    }
+}

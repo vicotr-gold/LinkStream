@@ -1,0 +1,311 @@
+.form-control {
+    border-radius: 10px;
+    background: $white;
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.form-group {
+    label,
+    .col-form-label {
+        color: $black;
+        line-height: 24px;
+    }
+    .invalid-feedback {
+        font-size: px2rem(12);
+        color: $linkstream-30;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+}
+
+.custom-checkbox {
+    .custom-control-label {
+        padding-left: 6px;
+        color: $black;
+        line-height: 1.9;
+        &:before {
+            width: 18px;
+            height: 18px;
+        }
+        &:after {
+            width: 25px;
+            height: 25px;
+            top: 1px;
+            left: -24px;
+        }
+    }
+}
+
+.modal {
+    .custom-checkbox .custom-control-label {
+        &:after {
+            top: 0;
+        }
+    }
+}
+
+.custom-radio {
+    .custom-control-label {
+        line-height: 2;
+        padding-left: 5px;
+    }
+
+    .custom-control-label:before,
+    .custom-control-label:after {
+        width: 18px;
+        height: 18px;
+    }
+
+    .custom-control-label:before {
+        border: 2px solid $gray-330;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label:before {
+        background-color: $white;
+        border-color: $primary;
+    }
+
+    .custom-control-label:after {
+        background-position: 2px;
+        background-size: 14px;
+    }
+}
+
+.BasicSelect {
+    cursor: pointer;
+
+    .arrow-icon {
+        position: relative;
+        top: 1px;
+        right: 0px;
+    }
+
+    .vs__dropdown-toggle {
+        cursor: default;
+        height: $input-height;
+        border-radius: $input-border-radius;
+        border: 1px solid $input-border-color;
+        padding: $input-btn-padding-y $input-btn-padding-x;
+    }
+
+    .vs__selected,
+    .vs__search {
+        line-height: 1.9;
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .vs__search {
+        &::placeholder {
+            color: $input-placeholder-color;
+        }
+    }
+
+    .vs__selected-options {
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .vs__actions {
+        padding: 0 !important;
+    }
+
+    .vs__dropdown-menu {
+        border-radius: initial !important;
+        box-shadow: initial !important;
+        max-height: 250px;
+    }
+
+    .vs__clear {
+        display: none;
+    }
+
+    .vs__dropdown-option {
+        padding: 8px 12px !important;
+    }
+
+    .vs__dropdown-option--highlight {
+        color: $white !important;
+        background: rgba($linkstream-1, 0.9) !important;
+    }
+
+    .vs__no-options {
+        padding: 5px !important;
+    }
+
+    &.is-invalid {
+        .vs__dropdown-toggle {
+            border-color: $form-feedback-invalid-color;
+        }
+
+        .vs__dropdown-menu {
+            border-top: 1px solid $form-feedback-invalid-color;
+        }
+    }
+}
+
+.TimePicker {
+    .arrow-icon {
+        top: 0px;
+        left: 1px;
+    }
+}
+
+.DatePicker {
+    .vc-bg-blue-600,
+    .vc-day-content:active,
+    .vc-day-content:hover,
+    .vc-day-content:focus {
+        color: $white;
+        background: rgba($linkstream-1, 0.9) !important;
+    }
+
+    input {
+        cursor: default;
+        background-color: $white !important;
+        background-image: url(~@/assets/img/ico/datepicker.svg);
+        background-repeat: no-repeat;
+        background-position: 96% center;
+        &::placeholder {
+            color: $input-placeholder-color;
+        }
+    }
+
+    &.is-invalid {
+        input {
+            border-color: $form-feedback-invalid-color;
+        }
+    }
+}
+
+.date-input-group {
+    .TimePicker,
+    .DatePicker {
+        width: 50%;
+    }
+
+    .DatePicker input {
+        border-right-width: 0px;
+    }
+}
+
+.TaggerInput {
+    max-width: none !important;
+    &.is-invalid {
+        .ti-input {
+            border-color: $danger !important;
+        }
+    }
+    .ti-input {
+        min-height: $input-height !important;
+    }
+    .ti-new-tag-input {
+        font-size: $input-btn-font-size !important;
+        &::placeholder {
+            color: $input-placeholder-color !important;
+        }
+    }
+    .ti-tags {
+        line-height: inherit !important;
+    }
+    .ti-icon-close {
+        line-height: normal !important;
+    }
+    .ti-tag {
+        background-color: $black !important;
+        border-radius: 100px !important;
+        padding: 0 10px !important;
+        color: $gray-200 !important;
+        font-size: px2rem(11) !important;
+        font-weight: 500 !important;
+        letter-spacing: 0 !important;
+        margin: 4px 2px !important;
+        padding: 3px 12px !important;
+    }
+}
+
+.SearchInput {
+    position: relative;
+    input {
+        padding-left: 37px;
+    }
+    .input-icon {
+        position: absolute;
+        top: 13px;
+        left: 13px;
+    }
+    .input-clear-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+.money-input {
+    position: relative;
+    input {
+        padding-left: 27px;
+        width: 100%;
+    }
+    .input-icon {
+        position: absolute;
+        top: 13px;
+        left: 13px;
+    }
+}
+
+.UnlimitedInputGroup {
+    &.is-unlimited {
+        .btn,
+        .form-control {
+            background-color: $gray-110;
+        }
+        .btn {
+            box-shadow: inset -1px 1px 3px 0 rgba(0, 0, 0, 0.18);
+        }
+    }
+    .btn {
+        &,
+        &:active {
+            border-color: $gray-330 !important;
+        }
+        &:hover {
+            background-color: $gray-110;
+        }
+        font-size: px2rem(13);
+        font-weight: 500;
+        border-radius: 4px 0 0 4px;
+        letter-spacing: 0;
+        text-transform: none;
+        color: $gray-810;
+        background-color: $white;
+        padding: 0 15px;
+    }
+}
+
+.MultiSelect {
+    position: relative;
+    &.is-open {
+        .select-menu {
+            display: block;
+        }
+    }
+    .select-menu {
+        position: absolute;
+        z-index: 1;
+        display: none;
+        width: 100%;
+        max-height: 297px;
+        overflow-y: scroll;
+        margin-top: 11px;
+        border: 1px solid $gray-420;
+        border-radius: 2px;
+        background-color: $white;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+    }
+}

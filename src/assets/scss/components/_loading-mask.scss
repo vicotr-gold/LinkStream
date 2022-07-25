@@ -1,0 +1,26 @@
+.LoadingMask {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.025);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    //visibility: hidden;
+    //opacity: 0;
+    //transition: visibility 0.3s, opacity 0.3s;
+    &.is-shown {
+        visibility: visible;
+        opacity: 1;
+    }
+    &.is-fullscreen {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .LoadingSpinner {
+        margin-top: 0 !important;
+    }
+}

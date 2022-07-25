@@ -1,0 +1,165 @@
+.LinkCard {
+    padding: 0;
+
+    &.is-private {
+        .card-title,
+        .card-viz-badge {
+            color: $gray-550;
+        }
+    }
+
+    .view-section {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        .card-body {
+            flex-grow: 1;
+            cursor: pointer;
+        }
+    }
+
+    .card-media {
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .card-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-viz-badge {
+        font-size: px2rem(11);
+        color: $black;
+    }
+
+    .edit-section {
+        position: relative;
+        padding: 20px;
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .edit-form {
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .card-edit-actions {
+        .right-col {
+            .btn {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .pubdate {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        font-size: px2rem(11);
+        .btn {
+            font-size: px2rem(11);
+            margin-left: 5px;
+        }
+    }
+
+    .DropImage {
+        margin-bottom: 10px;
+
+        .preview-section {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .upload-dd,
+        .preview-thumb {
+            width: 65px;
+            height: 65px;
+        }
+
+        .file-add-btn {
+            display: block;
+            margin-left: 10px;
+            color: $black;
+            font-size: px2rem(11);
+        }
+
+        .upload-icon:before {
+            background-image: url(~@/assets/img/ico/cam-plus-sm.svg);
+            width: 34px;
+            height: 31px;
+        }
+
+        .upload-msg {
+            font-size: px2rem(10);
+        }
+
+        .file-remove-icon {
+            display: none;
+        }
+
+        .file-remove-btn {
+            margin-left: 10px;
+            color: $black;
+            font-size: px2rem(11);
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .edit-section {
+            .card-body {
+                flex-direction: row;
+            }
+        }
+
+        .card-media {
+            margin: 0 14px;
+        }
+
+        .card-img {
+            width: 68px;
+            height: 68px;
+        }
+
+        .edit-form {
+            flex-grow: 1;
+            margin-left: 20px;
+            margin-right: 80px;
+        }
+
+        .pubdate {
+            justify-content: flex-end;
+        }
+
+        .DropImage {
+            margin-bottom: 0;
+
+            .preview-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .upload-dd,
+            .preview-thumb {
+                width: 120px;
+                height: 120px;
+            }
+
+            .file-remove-btn {
+                margin-left: 0;
+            }
+
+            .upload-msg {
+                font-size: px2rem(12);
+            }
+
+            .file-add-btn {
+                display: none;
+            }
+        }
+    }
+}

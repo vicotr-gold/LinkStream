@@ -1,0 +1,62 @@
+.fwz-counter {
+    color: $gray-520;
+    font-size: px2rem(12);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.fwz {
+    .step-header {
+        margin-bottom: 20px;
+    }
+
+    .step-title {
+        color: $black;
+        font-size: px2rem(30);
+        font-weight: 800;
+        line-height: 34px;
+    }
+
+    .step-subtitle {
+        color: $black;
+        line-height: 24px;
+        font-weight: normal;
+        font-size: px2rem(14);
+    }
+}
+
+.fwz-pager {
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: 1px solid $gray-330;
+    padding-top: 20px;
+    margin-top: 29px;
+}
+
+.fwz-prev-btn {
+    color: $gray-520;
+}
+
+.fwz-next-btn {
+    margin-bottom: 10px;
+}
+
+@include media-breakpoint-up(md) {
+    .fwz {
+        .fieldset {
+            max-width: 500px;
+        }
+    }
+
+    .fwz-pager {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .fwz-next-btn {
+        margin-bottom: 0;
+    }
+}

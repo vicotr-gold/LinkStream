@@ -1,0 +1,17 @@
+.page-login {
+    .pwd-form-group {
+        position: relative;
+        .pwd-input {
+            padding-right: 2.7rem;
+        }
+        .toggle-pwd-btn {
+            position: absolute;
+            top: 34px;
+            right: 4px;
+            padding: 10px;
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}

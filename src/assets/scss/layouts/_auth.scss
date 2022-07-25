@@ -1,0 +1,31 @@
+.layout-auth {
+    .navbar {
+        height: 80px;
+        background-color: $black !important;
+        .navbar-brand .logo {
+            height: 34px;
+        }
+    }
+
+    .form-group {
+        width: 350px;
+        max-width: 100%;
+        margin: 0 auto;
+        color: $black;
+        text-align: left;
+    }
+
+    .page-login,
+    .page-signup {
+        .g-login-btn-wrap {
+            width: 300px;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .auth-btn {
+            width: 300px;
+        }
+    }
+}

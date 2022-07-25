@@ -1,0 +1,373 @@
+.page.page-beat-add {
+    .fwz.is-step-type {
+        .fwz-counter {
+            display: none;
+        }
+    }
+
+    .fwz.is-step-info {
+        .fwz-prev-btn {
+            visibility: hidden;
+        }
+    }
+
+    .fwz-tabs {
+        display: none;
+    }
+
+    .fwz-pager {
+        flex-direction: row;
+        justify-content: space-between;
+        .fwz-next-btn {
+            margin-bottom: 0;
+        }
+    }
+
+    .fwz-tabs ul,
+    .fwz-step,
+    .fwz-pager {
+        max-width: $layout-account-page-max-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fwz-tabs {
+        margin-bottom: 30px;
+        border-bottom: 1px solid $gray-330;
+        li {
+            display: inline-block;
+            line-height: 50px;
+            margin-right: 15px;
+            color: $gray-510;
+            font-size: px2rem(13);
+            font-weight: 600;
+            letter-spacing: 0;
+            cursor: default;
+            &.done {
+                color: $gray-810;
+                font-weight: bold;
+            }
+            &.active {
+                color: $gray-810;
+                font-weight: bold;
+                border-bottom: 3px solid $linkstream-1;
+            }
+        }
+    }
+
+    .licenses-step,
+    .files-step,
+    .marketing-step {
+        .step-body {
+            flex-direction: column;
+        }
+    }
+
+    .type-step {
+        .step-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 30px 0;
+            border-radius: 9px;
+            &:first-child {
+                margin-bottom: 15px;
+            }
+        }
+        .card-title {
+            font-size: px2rem(18);
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: 34px;
+            text-align: center;
+            margin-top: 13px;
+        }
+        .card-text {
+            color: $black;
+            font-size: px2rem(13);
+            letter-spacing: 0.1px;
+            line-height: 22px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    .info-step {
+        .step-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .left-col {
+            margin-bottom: 10px;
+        }
+        .DropImage {
+            .upload-dd {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .review-step {
+        .step-body {
+            display: flex;
+            flex-direction: column;
+            .left-col {
+                margin-bottom: 15px;
+            }
+        }
+        .Card {
+            position: relative;
+            padding: 15px;
+            margin-top: 0;
+            p {
+                margin: 0;
+                line-height: 20px;
+            }
+            p,
+            li {
+                font-size: px2rem(13);
+                line-height: 20px;
+            }
+        }
+        .card-title {
+            font-size: px2rem(14);
+            margin-bottom: 5px;
+        }
+        .card-edit-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        .viz-card {
+            .toggle-label {
+                font-size: px2rem(12);
+                margin-right: 10px;
+            }
+            .card-header {
+                justify-content: space-between;
+            }
+            .form-group {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-top: 0;
+        max-width: none;
+
+        .fwz-tabs {
+            display: block;
+        }
+
+        .fwz-counter {
+            display: none;
+        }
+
+        .type-step {
+            padding-top: 48px;
+            .step-body {
+                flex-direction: row;
+            }
+            .Card {
+                padding: 60px 50px;
+                &:first-child {
+                    margin-right: 30px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .info-step,
+        .review-step {
+            .step-body {
+                flex-direction: row;
+                .left-col {
+                    margin: 0 30px 0 0;
+                }
+            }
+        }
+
+        .info-step {
+            .right-col {
+                flex-grow: 1;
+            }
+            .DropImage {
+                .upload-section {
+                    flex-direction: column;
+                }
+                .upload-dd {
+                    margin: 0 0 5px 0;
+                }
+            }
+        }
+
+        .review-step {
+            .right-col {
+                flex-grow: 1;
+            }
+            .Card {
+                padding: 20px;
+            }
+            .card-title {
+                font-size: px2rem(18);
+                margin-bottom: 10px;
+            }
+        }
+
+        .MarketingBlock {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            .Card {
+                flex-basis: 49%;
+            }
+            .card-title {
+                font-size: px2rem(14px);
+            }
+        }
+    }
+}
+
+//------------------------------------------------------------------------
+// Styles shared by steps and modals
+//------------------------------------------------------------------------
+
+.FilesBlock {
+    .DropFile:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.InfoBlock {
+    .collabs {
+        .collab-row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .collab-col {
+            margin-bottom: 10px;
+        }
+        .pub-col {
+            margin-bottom: 0;
+        }
+        .remove-col {
+            margin: 5px 0 0 0;
+        }
+        .mini-profile {
+            display: flex;
+            align-items: center;
+            color: $black;
+            font-size: px2rem(13);
+            font-weight: 600;
+            letter-spacing: 0;
+            border: 1px solid $input-border-color;
+            height: 42.6px;
+            padding-left: 7px;
+            .UserAvatar {
+                margin-right: 5px;
+            }
+        }
+        .remove-icon {
+            display: none;
+        }
+        .add-btn {
+            color: $black;
+            font-size: px2rem(14);
+            font-weight: bold;
+            .ico {
+                position: relative;
+                top: 2px;
+                margin-right: 2px;
+            }
+        }
+        .form-control[readonly] {
+            background-color: $white;
+            cursor: default;
+        }
+        @include media-breakpoint-up(md) {
+            .collab-row {
+                flex-direction: row;
+                margin-bottom: 10px;
+                &:first-child {
+                    label {
+                        display: block;
+                    }
+                }
+            }
+            .collab-col {
+                margin-bottom: 0;
+            }
+            label {
+                display: none;
+            }
+            .user-col {
+                width: 60%;
+            }
+            .profit-col {
+                width: 20%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .pub-col {
+                width: 20%;
+            }
+            .remove-col {
+                position: relative;
+            }
+            .remove-btn {
+                display: none;
+            }
+            .remove-icon {
+                display: block;
+                position: absolute;
+                top: 11px;
+                right: -25px;
+            }
+        }
+    }
+}
+
+.MarketingBlock {
+    display: flex;
+    flex-direction: column;
+    .logo {
+        margin: 0 20px 0 15px;
+    }
+    .Card {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        margin: 0 0 15px 0;
+        padding: 28px 20px;
+    }
+}
+
+.ReviewBlock {
+    .text-danger {
+        font-weight: bold;
+    }
+}
+
+.MarketingEditModal {
+    .Card {
+        flex-basis: 100%;
+    }
+}
+
+.InfoEditModal {
+    .collabs {
+        @include media-breakpoint-up(md) {
+            .remove-icon {
+                right: -20px;
+            }
+        }
+    }
+}

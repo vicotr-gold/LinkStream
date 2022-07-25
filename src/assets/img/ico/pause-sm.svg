@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>83B9E231-B5C9-40BC-98D5-68FCF341E959</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Add-A-Beat---Preview-Player" transform="translate(-25.000000, -240.000000)">
+            <g id="Untagged" transform="translate(10.000000, 221.000000)">
+                <g id="icon-pause" transform="translate(15.000000, 19.000000)">
+                    <circle id="Oval" fill="#000000" cx="12" cy="12" r="12"></circle>
+                    <g id="icons-/-icon_pause" transform="translate(6.857143, 6.857143)" fill="#FFFFFF" fill-rule="nonzero">
+                        <g id="pause-button" transform="translate(1.714286, 0.000000)">
+                            <path d="M1.33870807,0 C0.721118012,0 0.220695652,0.500645963 0.220695652,1.11801242 L0.220695652,9.1621118 C0.220695652,9.77992547 0.721118012,10.2801242 1.33870807,10.2801242 C1.95629814,10.2801242 2.4567205,9.77970186 2.4567205,9.1621118 L2.4567205,1.11801242 C2.4567205,0.50042236 1.95652174,0 1.33870807,0 Z" id="Path"></path>
+                            <path d="M5.3635528,0 C4.74596273,0 4.24554037,0.500645963 4.24554037,1.11801242 L4.24554037,9.1621118 C4.24554037,9.77970186 4.74596273,10.2801242 5.3635528,10.2801242 C5.98114286,10.2801242 6.48156522,9.77970186 6.48156522,9.1621118 L6.48156522,1.11801242 C6.48156522,0.500645963 5.98114286,0 5.3635528,0 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

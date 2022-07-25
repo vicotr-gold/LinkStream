@@ -1,0 +1,116 @@
+.LoadingSpinner {
+    text-align: center;
+    line-height: 0;
+    > span {
+        display: inline-block;
+        background-color: $linkstream-1;
+    }
+
+    // Pulse
+
+    &.is-pulse {
+        > span {
+            width: 4px;
+            height: 35px;
+            border-radius: 2px;
+            margin: 2px;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+            animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+        }
+        .dot2,
+        .dot4 {
+            -webkit-animation-delay: -0.4s;
+            animation-delay: -0.4s;
+        }
+        .dot1,
+        .dot5 {
+            -webkit-animation-delay: -0.2s;
+            animation-delay: -0.2s;
+        }
+    }
+
+    // Bounce
+
+    &.is-bounce {
+        > span {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            -webkit-animation: sk-bouncedelay 1.2s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.2s infinite ease-in-out both;
+        }
+        .dot1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+        .dot2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+    }
+
+    // Bars
+
+    &.is-bars {
+        > span {
+            height: 60px;
+            width: 6px;
+            margin-left: 3px;
+            -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+            animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        }
+        .dot2 {
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s;
+        }
+        .dot3 {
+            -webkit-animation-delay: -1s;
+            animation-delay: -1s;
+        }
+        .dot4 {
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+        }
+        .dot5 {
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s;
+        }
+    }
+
+    // Scale
+
+    &.is-scale {
+        > span {
+            width: 4px;
+            height: 35px;
+            border-radius: 2px;
+            margin: 2px;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        .dot1 {
+            -webkit-animation: line-scale 1s -0.4s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+            animation: line-scale 1s -0.4s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+        }
+        .dot2 {
+            -webkit-animation: line-scale 1s -0.3s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+            animation: line-scale 1s -0.3s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+        }
+        .dot3 {
+            -webkit-animation: line-scale 1s -0.2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+            animation: line-scale 1s -0.2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+        }
+        .dot4 {
+            -webkit-animation: line-scale 1s -0.1s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+            animation: line-scale 1s -0.1s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+        }
+        .dot5 {
+            -webkit-animation: line-scale 1s 0s infinite
+                cubic-bezier(0.2, 0.68, 0.18, 1.08);
+            animation: line-scale 1s 0s infinite
+                cubic-bezier(0.2, 0.68, 0.18, 1.08);
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.ps-container {
+    margin-right: -15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.ps__scrollbar-y-rail {
+    width: 5px !important;
+}
+
+.ps__scrollbar-y {
+    left: 0 !important;
+}
+
+.ps__rail-y,
+.ps__thumb-y {
+    width: 5px !important;
+    right: 0 !important;
+}
+
+.ps__rail-y.ps--clicking .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y:hover > .ps__thumb-y {
+    width: 5px !important;
+}
+
+.ps__scrollbar-y-rail:hover > .ps__scrollbar-y,
+.ps__scrollbar-y-rail:focus > .ps__scrollbar-y,
+.ps__scrollbar-y-rail.ps--clicking .ps__scrollbar-y {
+    width: 5px !important;
+    left: 0 !important;
+}
+
+.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    right: 0 !important;
+}
+
+.ps__scrollbar-y-rail:hover,
+.ps__scrollbar-y-rail:focus,
+.ps__scrollbar-y-rail.ps--clicking .ps__scrollbar-y {
+    background-color: $border-color !important;
+}
+
+.ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail {
+    background-color: $border-color !important;
+}
+
+.ps__scrollbar-y {
+    background-color: $border-color !important;
+}

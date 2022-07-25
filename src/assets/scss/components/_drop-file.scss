@@ -1,0 +1,104 @@
+.DropFile {
+    &.is-invalid {
+        .upload-section {
+            border-color: $danger;
+            border-width: 2px;
+        }
+    }
+
+    &.is-zip {
+        .preview-icon {
+            @extend .ico;
+            display: none;
+            &:before {
+                @extend .ico:before;
+                background-image: url(~@/assets/img/ico/zip-file.svg);
+                width: 18px;
+                height: 24px;
+            }
+        }
+    }
+
+    .preview-section,
+    .upload-section {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 15px 20px;
+        height: 80px;
+    }
+
+    .preview-section {
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.22);
+    }
+
+    .preview-icon {
+        display: none;
+    }
+
+    .upload-section {
+        border: 2px dashed $gray-410;
+        cursor: pointer;
+        &.highlight,
+        &:hover {
+            border-color: $linkstream-20;
+        }
+    }
+
+    .preview-body,
+    .upload-body {
+        flex-grow: 1;
+    }
+
+    .preview-title,
+    .upload-title {
+        font-size: px2rem(12);
+        font-weight: bold;
+    }
+
+    .preview-subtitle,
+    .upload-subtitle {
+        font-size: px2rem(11);
+    }
+
+    .file-remove-btn {
+        display: none;
+        text-decoration: none;
+    }
+
+    .upload-icon {
+        @extend .ico;
+        &:before {
+            @extend .ico:before;
+            background-image: url(~@/assets/img/ico/cloud-upload-sm.svg);
+            width: 35px;
+            height: 28px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .preview-title,
+        .upload-title {
+            font-size: px2rem(14);
+        }
+
+        .preview-subtitle,
+        .upload-subtitle {
+            font-size: px2rem(12);
+        }
+
+        .upload-icon:before {
+            background-image: url(~@/assets/img/ico/cloud-upload-lg.svg);
+            width: 43px;
+            height: 34px;
+        }
+
+        .file-remove-btn {
+            display: block;
+        }
+
+        .preview-dropdown {
+            display: none;
+        }
+    }
+}

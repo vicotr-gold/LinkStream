@@ -1,0 +1,14 @@
+.#{$vt-namespace}__toast {
+    padding: $spacer;
+    @include border-radius(2px);
+    &-body {
+        font-size: $font-size-base;
+    }
+}
+.#{$vt-namespace}__close-button {
+    font-size: $font-size-base;
+    font-weight: $font-weight-light;
+}
+.#{$vt-namespace}__progress-bar {
+    height: 3px;
+}

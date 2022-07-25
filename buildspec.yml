@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10  
+  pre_build:
+    commands:
+      - echo Uninstalling dependencies...
+      - rm -rf ./node_modules 
+      - echo Installing dependencies...
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+      - yarn install 
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo $CODEBUILD_SRC_DIR 
+      - ls 
+      - find ${CODEBUILD_SRC_DIR} -type d -not -name dist -exec rm -rf {} \;
+      - mv dist/* .
+      - ls 
+      - ls ../
+artifacts:
+  files:
+    - '**/*'
+    
+  

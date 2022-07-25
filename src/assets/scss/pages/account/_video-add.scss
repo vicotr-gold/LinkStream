@@ -1,0 +1,35 @@
+.page-vid-add {
+    .video-wrapper {
+        width: 202px;
+        height: 113px;
+        margin-bottom: 20px;
+    }
+
+    .fwz.is-step-1 {
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        .fwz-pager {
+            border-top: 0;
+            padding-top: 0;
+        }
+
+        .fwz-prev-btn {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        .video-wrapper {
+            width: 330px;
+            height: 186px;
+        }
+
+        .fwz.is-step-1 {
+            .form-group {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

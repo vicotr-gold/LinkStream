@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="115px" height="114px" viewBox="0 0 115 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>88050EF8-D0D3-47A7-B1D7-34D4FC3ABC13</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0.166474896%" x2="100%" y2="99.8335251%" id="linearGradient-1">
+            <stop stop-color="#974EF6" offset="0%"></stop>
+            <stop stop-color="#D49EAC" offset="51.668788%"></stop>
+            <stop stop-color="#FFD778" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Track-Type-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Song-or-Beat" transform="translate(-637.000000, -188.000000)">
+            <g id="Song-Card" transform="translate(527.000000, 128.000000)">
+                <g id="Group-4" transform="translate(50.000000, 60.000000)">
+                    <g id="song" transform="translate(60.496479, 0.000000)">
+                        <ellipse id="Oval" fill="url(#linearGradient-1)" cx="56.9894366" cy="56.8944844" rx="56.9894366" ry="56.8944844"></ellipse>
+                        <g id="icomoon-free:music" transform="translate(33.674296, 35.332134)" fill-rule="nonzero">
+                            <g id="Icon" transform="translate(0.829225, 0.667866)" fill="#FFFFFF">
+                                <path d="M40.3125,0 L43,0 L43,30.90625 C43,34.6176875 38.7886875,37.625 33.59375,37.625 C28.3988125,37.625 24.1875,34.6176875 24.1875,30.90625 C24.1875,27.1948125 28.3988125,24.1875 33.59375,24.1875 C36.2248125,24.1875 38.6059375,24.9588125 40.3125,26.2058125 L40.3125,10.75 L18.8125,15.528375 L18.8125,36.28125 C18.8125,39.9926875 14.6011875,43 9.40625,43 C4.2113125,43 0,39.9926875 0,36.28125 C0,32.5698125 4.2113125,29.5625 9.40625,29.5625 C12.0373125,29.5625 14.4184375,30.3338125 16.125,31.5808125 L16.125,5.375 L40.3125,0 Z" id="Icon-Path"></path>
+                            </g>
+                            <rect id="ViewBox" x="0.829225352" y="0.667865707" width="43" height="43"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>56AC0E20-07ED-4846-8847-D29665724C63</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Manage-Links---V3" transform="translate(-260.000000, -333.000000)">
+            <g id="Link-1" transform="translate(10.000000, 308.000000)">
+                <g id="icon-edit-link" transform="translate(250.000000, 25.000000)">
+                    <rect id="Rectangle-Copy" fill="#FFFFFF" x="0" y="0" width="40" height="40" rx="20"></rect>
+                    <g id="ic-baseline-edit" transform="translate(10.400000, 10.400000)" fill-rule="nonzero">
+                        <g id="Icon" fill="#000000">
+                            <path d="M2.4,13.8 L2.4,16.8 L5.4,16.8 L14.248,7.952 L11.248,4.952 L2.4,13.8 Z M16.568,5.632 C16.7177825,5.48252432 16.8019552,5.27960758 16.8019552,5.068 C16.8019552,4.85639242 16.7177825,4.65347568 16.568,4.504 L14.696,2.632 C14.5465243,2.48221753 14.3436076,2.39804477 14.132,2.39804477 C13.9203924,2.39804477 13.7174757,2.48221753 13.568,2.632 L12.104,4.096 L15.104,7.096 L16.568,5.632 Z" id="Icon-Shape"></path>
+                        </g>
+                        <rect id="ViewBox" x="0" y="0" width="19.2" height="19.2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

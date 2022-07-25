@@ -1,0 +1,127 @@
+.page-profile-edit {
+    .banner .doka--root {
+        &[data-style-viewport*='x-comfortable'] {
+            .doka--menu {
+                top: 0;
+            }
+            .doka--button-action-cancel {
+                background-color: #2b2b2b !important;
+            }
+        }
+        &[data-style-viewport*='x-cramped'] {
+            .doka--menu {
+                bottom: -14px;
+            }
+            .doka--toolbar {
+                top: -12px;
+            }
+        }
+    }
+
+    .profile-images-container {
+        .banner-container {
+            position: relative;
+            width: 100%;
+            max-width: 802px;
+            background: $gray-400;
+
+            .banner {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+
+                input[type='file'] {
+                    display: none;
+                }
+            }
+
+            .doka-overlay + button {
+                position: absolute;
+                bottom: 0.5 * $spacer;
+                right: 0.5 * $spacer;
+                height: 36px;
+                width: 36px;
+                padding: 0;
+                border: none;
+                box-shadow: none !important;
+                @include border-radius(9999em);
+            }
+        }
+
+        .avatar-container {
+            position: relative;
+            margin-top: -90px;
+            margin-left: 25px;
+            width: 156px;
+            height: 156px;
+
+            .avatar-box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: $white;
+                overflow: hidden;
+                border: 3px solid $white;
+                @include border-radius(9999em);
+
+                input[type='file'] {
+                    display: none;
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            button {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                height: 36px;
+                width: 36px;
+                padding: 0;
+                color: $text-color;
+                background: $gray-400;
+                border: none;
+                box-shadow: none !important;
+                @include border-radius(9999em);
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+
+            .avatar-container {
+                margin-top: -70px;
+                width: 146px;
+                height: 146px;
+            }
+        }
+
+        @include media-breakpoint-down(xs) {
+            .avatar-container {
+                margin: -50px auto 0;
+                width: 106px;
+                height: 106px;
+
+                button {
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    .profile_edit_elements {
+        max-width: 500px;
+
+        .btn-customize-url {
+            font-size: 70%;
+            line-height: 1;
+        }
+    }
+}

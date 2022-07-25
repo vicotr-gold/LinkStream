@@ -1,0 +1,51 @@
+.MiniAudioPlayer {
+    position: relative;
+
+    &.is-playing {
+        .player-play-btn:before {
+            background-image: url(~@/assets/img/ico/pause-sm.svg);
+        }
+    }
+
+    &.is-loading {
+        .player-spinner {
+            display: block;
+        }
+    }
+
+    .player-play-btn:before {
+        background-image: url(~@/assets/img/ico/play-sm.svg);
+        width: 24px;
+        height: 24px;
+    }
+
+    .player-spinner {
+        display: none;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        color: $primary;
+        border-width: 0.15em;
+        width: 30px;
+        height: 30px;
+    }
+
+    @include media-breakpoint-up(sm) {
+        &.is-playing {
+            .player-play-btn:before {
+                background-image: url(~@/assets/img/ico/pause-lg.svg);
+            }
+        }
+
+        .player-play-btn:before {
+            background-image: url(~@/assets/img/ico/play-lg.svg);
+            width: 35px;
+            height: 35px;
+        }
+
+        .player-spinner {
+            width: 41px;
+            height: 41px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.alert {
+    padding: 20px;
+    border-radius: 4px;
+    .btn-link {
+        vertical-align: baseline;
+    }
+    &.alert-success {
+        border: 1px solid $linkstream-90;
+        background-color: $linkstream-100;
+        &,
+        .btn-link {
+            color: $linkstream-60;
+        }
+    }
+}

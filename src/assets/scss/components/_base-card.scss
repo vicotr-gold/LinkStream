@@ -1,0 +1,123 @@
+.Card {
+    @include border-radius(4px);
+    position: relative;
+    background-color: $white;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.22);
+    margin: 15px 0;
+    padding: 15px;
+
+    &.is-private {
+        .card-lock {
+            display: block;
+        }
+        .card-viz-badge {
+            display: inline;
+        }
+    }
+
+    .card-header {
+        display: flex;
+        background-color: $white;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    .card-title {
+        color: $gray-810;
+        font-size: px2rem(12);
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card-img {
+        border-radius: 0;
+    }
+
+    .card-viz-badge {
+        display: none;
+    }
+
+    .card-lock {
+        display: none;
+        position: absolute;
+        background-image: url(~@/assets/img/lock-overlay-square.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card-close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    .card-edit-btn {
+        padding: 0;
+        &:before {
+            background-image: url(~@/assets/img/ico/edit-cir-white-sm.svg);
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .card-trash-btn {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+    }
+
+    .card-edit-actions {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $gray-330;
+        padding-top: 16px;
+        margin-top: 16px;
+    }
+
+    @include media-breakpoint-up(md) {
+        &:hover {
+            .card-trash-btn {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .card-title {
+            font-size: px2rem(14);
+        }
+
+        .card-trash-btn,
+        .card-edit-btn {
+            margin-left: 10px;
+        }
+
+        .card-edit-btn {
+            &:before {
+                background-image: url(~@/assets/img/ico/edit-cir-white-lg.svg);
+                width: 50px;
+                height: 50px;
+            }
+            &:hover {
+                &:before {
+                    background-image: url(~@/assets/img/ico/edit-cir-gray-lg.svg);
+                }
+            }
+        }
+
+        .card-trash-btn {
+            display: block;
+            &:before {
+                background-image: url(~@/assets/img/ico/trash-lg.svg);
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

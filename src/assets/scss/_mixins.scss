@@ -1,0 +1,11 @@
+// Mixin to hide scrollbar on scrollable element
+@mixin scrollbarHidden {
+    // Chrome/Safari
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    // FireFox
+    scrollbar-width: none;
+    // IE 10+
+    -ms-overflow-style: none;
+}

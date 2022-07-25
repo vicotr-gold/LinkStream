@@ -1,0 +1,188 @@
+.DropImage {
+    .upload-dd,
+    .preview-thumb {
+        height: 140px;
+        width: 140px;
+    }
+
+    .preview-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .preview-body {
+        display: none;
+        flex-grow: 1;
+        font-size: px2rem(14);
+        font-weight: bold;
+        letter-spacing: 0;
+        margin-left: 10px;
+    }
+
+    .preview-thumb {
+        position: relative;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .preview-dropdown {
+        display: none;
+    }
+
+    .file-replace-icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+    }
+
+    .file-remove-icon {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+    }
+
+    .file-remove-btn {
+        font-size: px2rem(12);
+    }
+
+    .upload-section {
+        display: flex;
+    }
+
+    .upload-controls {
+        align-self: center;
+    }
+
+    .upload-dd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: 2px dashed $gray-330;
+        background-color: $white;
+        &.highlight,
+        &:hover {
+            border-color: $linkstream-20;
+        }
+    }
+
+    .file-add-btn {
+        display: none;
+    }
+
+    .upload-icon {
+        &:before {
+            @extend .ico:before;
+            background-image: url(~@/assets/img/ico/cam-plus-md.svg);
+            width: 40px;
+            height: 36px;
+        }
+    }
+
+    .upload-msg {
+        font-size: px2rem(12);
+        text-align: center;
+        u {
+            color: $primary;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    }
+
+    .upload-msg-l {
+        display: none;
+    }
+
+    &.is-inline {
+        .preview-thumb,
+        .upload-dd {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0;
+        }
+        .preview-section {
+            flex-direction: row;
+            align-items: center;
+        }
+        .preview-body,
+        .preview-dropdown {
+            display: block;
+        }
+        .file-add-btn {
+            display: block;
+            margin-left: 15px;
+        }
+        .file-remove-icon,
+        .file-remove-btn,
+        .file-replace-icon,
+        .upload-msg-s,
+        .upload-msg-l {
+            display: none;
+        }
+        .upload-icon {
+            &:before {
+                background-image: url(~@/assets/img/ico/cam-plus-sm.svg);
+                width: 34px;
+                height: 30px;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .upload-dd,
+        .preview-thumb {
+            width: 215px;
+            height: 215px;
+            cursor: pointer;
+        }
+        .upload-icon:before {
+            background-image: url(~@/assets/img/ico/cam-plus-lg.svg);
+            width: 49px;
+            height: 44px;
+        }
+        .upload-msg {
+            font-size: px2rem(13);
+        }
+        .upload-msg-s {
+            display: none;
+        }
+        .upload-msg-l {
+            display: block;
+        }
+        &.is-inline {
+            .preview-thumb,
+            .upload-dd {
+                width: 215px;
+                height: 215px;
+                margin-bottom: 0;
+            }
+            .preview-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .preview-dropdown,
+            .file-replace-icon,
+            .upload-msg-l {
+                display: block;
+            }
+            .preview-body,
+            .preview-dropdown,
+            .file-add-btn {
+                display: none;
+            }
+            .file-remove-btn {
+                display: block;
+                margin: 10px 0 0 0;
+            }
+            .upload-icon:before {
+                background-image: url(~@/assets/img/ico/cam-plus-lg.svg);
+                width: 49px;
+                height: 44px;
+            }
+        }
+    }
+}

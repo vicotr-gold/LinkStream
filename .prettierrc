@@ -1,0 +1,15 @@
+{
+  "printWidth": 80,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "htmlWhitespaceSensitivity": "strict",
+  "overrides": [
+    {
+      "files": "*.{vue,js,jsx,scss}",
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}

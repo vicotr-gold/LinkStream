@@ -1,0 +1,142 @@
+.page-coming-soon {
+    padding: 20px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 70%,
+        $linkstream-70 100%
+    );
+
+    .logo:before {
+        background-image: url(~@/assets/img/logo/logo-no-text-sm.svg);
+        background-size: 100%;
+        width: 30px;
+        height: 34px;
+    }
+
+    .page-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .page-title {
+        color: $white;
+        font-size: px2rem(32);
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+
+    .page-body {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .page-footer {
+        color: $white;
+        font-size: px2rem(12);
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: center;
+        .pipe {
+            margin: 0 10px;
+        }
+        a {
+            &,
+            &:active,
+            &:visited,
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    form {
+        margin-bottom: 30px;
+        .form-group {
+            margin-bottom: 0;
+        }
+        input {
+            &:not(.is-invalid) {
+                border-color: $white;
+            }
+            &::placeholder {
+                color: $gray-530;
+            }
+        }
+        button {
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 30px 0 20px;
+        }
+    }
+
+    .img {
+        align-self: center;
+        img {
+            width: 100%;
+        }
+    }
+
+    .social-links {
+        font-size: px2rem(22);
+        a {
+            &:nth-child(2) {
+                margin: 0 18px;
+            }
+            &,
+            &:active,
+            &:visited,
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .join-text {
+        color: $white;
+        font-size: px2rem(13);
+        letter-spacing: 0;
+        line-height: 24px;
+        padding: 20px 0 30px;
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 1) 60%,
+            $linkstream-70 100%
+        );
+        .logo:before {
+            background-image: url(~@/assets/img/logo/logo-h-lg.png);
+            width: 157px;
+            height: 34px;
+        }
+        .page-header {
+            padding: 3px 10px;
+        }
+        .page-title {
+            font-size: px2rem(42);
+        }
+        .page-body {
+            flex-direction: row;
+            justify-content: center;
+            padding: 100px 27px 200px;
+        }
+        form {
+            max-width: 520px;
+            margin-bottom: 0;
+            input {
+                max-width: 400px;
+            }
+        }
+        .join-text {
+            font-size: px2rem(14);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@function pow($base, $exponents) {
+    $raised: 1;
+    @for $i from 1 through $exponents {
+        $raised: $raised * $base;
+    }
+    @return $raised;
+}
+
+@function px2rem($size) {
+    $remSize: $size / 14; // 14 is the root font size defined in _base.scss
+    @return #{$remSize}rem;
+}

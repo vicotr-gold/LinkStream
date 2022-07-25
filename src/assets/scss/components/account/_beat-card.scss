@@ -1,0 +1,70 @@
+.BeatCard {
+    display: flex;
+    align-items: center;
+
+    .card-media {
+        position: relative;
+        margin: 0 5px;
+    }
+
+    .card-title {
+        flex-grow: 1;
+        line-height: inherit;
+    }
+
+    .card-img,
+    .card-lock {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-viz-badge {
+        background-color: $gray-310;
+        color: $gray-620;
+        font-size: px2rem(11);
+        font-weight: 500;
+        letter-spacing: 0;
+        padding: 5px 10px;
+        margin-left: 5px;
+    }
+
+    .card-trash-btn,
+    .card-edit-btn {
+        display: none;
+    }
+
+    .file-badges {
+        display: none;
+        .badge {
+            &.hidden {
+                visibility: hidden;
+            }
+            text-transform: uppercase;
+            background-color: $gray-110;
+            color: $gray-530 !important;
+            margin-right: 10px;
+            padding: 5px 10px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .card-img,
+        .card-lock {
+            width: 68px;
+            height: 68px;
+        }
+
+        .card-trash-btn,
+        .card-edit-btn {
+            display: block;
+        }
+
+        .actions-menu {
+            display: none;
+        }
+
+        .file-badges {
+            display: block;
+        }
+    }
+}

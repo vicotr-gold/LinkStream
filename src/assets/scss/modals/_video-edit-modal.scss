@@ -1,0 +1,21 @@
+.VideoEditModal {
+    .video-wrapper {
+        width: 201px;
+        height: 113px;
+        margin-bottom: 20px;
+    }
+
+    .cancel-btn {
+        margin-right: 10px;
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .action-btn {
+            width: 110px;
+        }
+    }
+}

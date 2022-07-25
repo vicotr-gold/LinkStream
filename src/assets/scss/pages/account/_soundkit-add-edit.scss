@@ -1,0 +1,163 @@
+.page-kit-add-edit {
+    .page-header {
+        .right-col {
+            display: none;
+        }
+        .cancel-btn {
+            margin-right: 10px;
+        }
+    }
+
+    .page-body {
+        display: flex;
+        flex-direction: column;
+        padding: 0 3px;
+    }
+
+    .page-footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $gray-330;
+        padding: 20px 0;
+        .btn {
+            width: 130px;
+        }
+    }
+
+    .info-card,
+    .viz-card {
+        margin-top: 0;
+    }
+
+    .card-title {
+        font-size: px2rem(14);
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .viz-card {
+        .toggle-label {
+            font-size: px2rem(12);
+            margin-right: 10px;
+        }
+        .card-header {
+            justify-content: space-between;
+        }
+    }
+
+    .zip-card {
+        footer {
+            margin-top: 15px;
+        }
+        .files {
+            margin-top: 20px;
+            .file-count {
+                color: $gray-510;
+                font-size: px2rem(11);
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            .file-list {
+                li {
+                    display: flex;
+                    align-items: center;
+                    color: $black;
+                    font-size: px2rem(12);
+                    letter-spacing: 0;
+                    border-bottom: 1px solid $gray-120;
+                    padding: 18px 10px;
+                    .MiniAudioPlayer {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mp3-card {
+        .upload-hint {
+            margin-top: 5px;
+        }
+    }
+
+    .DropImage {
+        .upload-dd {
+            margin-right: 15px;
+        }
+    }
+
+    .DropFile {
+        .preview-icon {
+            display: block;
+            margin-right: 18px;
+        }
+        .upload-section {
+            flex-direction: column;
+            height: auto;
+            padding: 30px;
+        }
+        .upload-msg {
+            margin-top: 10px;
+            u {
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+        .upload-msg-s {
+            display: block;
+        }
+        .upload-msg-l {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .page-header {
+            .right-col {
+                display: block;
+            }
+        }
+
+        .page-body {
+            flex-direction: row;
+            .left-col {
+                flex-basis: 70%;
+                margin-right: 20px;
+            }
+            .right-col {
+                flex-basis: 30%;
+            }
+        }
+
+        .card-title {
+            font-size: px2rem(18);
+        }
+
+        .DatePicker input,
+        .TimePicker .vs__dropdown-toggle {
+            font-size: px2rem(12);
+        }
+
+        .DropImage {
+            .upload-section {
+                flex-direction: column;
+            }
+            .upload-dd {
+                margin: 0 0 5px 0;
+            }
+        }
+
+        .DropFile {
+            .upload-section {
+                padding: 40px 0;
+            }
+            .upload-msg-l {
+                display: block;
+            }
+            .upload-msg-s {
+                display: none;
+            }
+        }
+    }
+}

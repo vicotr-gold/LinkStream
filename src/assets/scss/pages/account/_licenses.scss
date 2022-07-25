@@ -1,0 +1,14 @@
+.page-licenses {
+    .page-title {
+        margin-bottom: 20px;
+    }
+
+    .Card {
+        display: flex;
+    }
+
+    .card-body {
+        flex-grow: 1;
+        align-self: center;
+    }
+}

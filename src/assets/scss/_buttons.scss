@@ -1,0 +1,279 @@
+.btn {
+    position: relative;
+    text-transform: uppercase;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: px2rem(13);
+}
+
+.btn,
+.btn.lg {
+    padding: 16px 45px;
+}
+
+.btn.btn-md {
+    font-size: px2rem(11);
+    padding: 12px 38px;
+}
+
+.btn.btn-sm {
+    font-size: px2rem(11);
+    letter-spacing: 1.5px;
+    padding: 9px 32px;
+}
+
+.btn.btn-xs {
+    font-size: px2rem(11);
+    padding: 5px 12px;
+}
+
+.btn-secondary {
+    color: $gray-550;
+    border-color: $secondary;
+    &:hover {
+        border-color: $secondary;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $gray-550 !important;
+    }
+}
+
+.btn-tertiary {
+    @extend .btn-black;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $gray-900;
+    }
+}
+
+.btn-outline-light {
+    &.btn-sm {
+        font-size: px2rem(12);
+        letter-spacing: 0;
+        padding: 9px 17px;
+    }
+    &.btn-md {
+        font-size: px2rem(13);
+    }
+    border: 1px solid $gray-320;
+    background-color: $white;
+    color: $black;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 0;
+    &:active,
+    &:hover {
+        background-color: $gray-110 !important;
+    }
+}
+
+.btn-transparent {
+    background: none;
+    border: none;
+}
+
+.btn-icon {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    line-height: 0;
+    @extend .ico;
+    &:before {
+        @extend .ico:before;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.btn-link {
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+    &:hover {
+        color: $gray-540;
+    }
+}
+
+.btn-text {
+    @extend .btn-link;
+    color: $black;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: $white;
+    background-color: $primary;
+}
+
+.TogglerButton {
+    margin-bottom: 0;
+    &.toggled {
+        .v-switch-core {
+            background-color: $linkstream-40 !important;
+        }
+    }
+    .v-switch-core {
+        background-color: $linkstream-30 !important;
+    }
+}
+
+.TogglerButtonGroup {
+    .btn {
+        padding: 8px 13px;
+        font-size: px2rem(13);
+        text-transform: none;
+        border-radius: 4px 0 0 4px;
+        font-weight: 500;
+        letter-spacing: 0;
+        &.active {
+            box-shadow: inset 1px 2px 3px 0 rgba(0, 0, 0, 0.5);
+        }
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+        &:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}
+
+.btn-spinner {
+    transition: opacity 500ms;
+
+    &.is-ig {
+        background: linear-gradient(
+            135deg,
+            #a624d2 0%,
+            #ce5353 47.8%,
+            #ffb02d 100%
+        );
+        &:not(:disabled):not(.disabled):active {
+            background: linear-gradient(
+                135deg,
+                #a624d2 0%,
+                #ce5353 47.8%,
+                #ffb02d 100%
+            );
+        }
+    }
+
+    &.is-g {
+        background-color: #d44c4c;
+        &:not(:disabled):not(.disabled):active {
+            background-color: #d44c4c;
+        }
+    }
+
+    &.is-g .label,
+    &.is-ig .label {
+        text-transform: none;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+
+    .ig-ico,
+    .g-ico {
+        position: absolute;
+        left: 17px;
+        top: 18px;
+    }
+
+    .spinner,
+    .s-ico {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        opacity: 0;
+        visibility: hidden;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: opacity 500ms;
+    }
+
+    .s-ico-succ,
+    .s-ico-fail {
+        font-size: 18px;
+    }
+
+    .label {
+        transition: opacity 500ms;
+    }
+
+    &.show-spinner {
+        .label {
+            opacity: 0;
+        }
+
+        .spinner {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &.show-success {
+        .label {
+            opacity: 0;
+        }
+
+        .s-ico-succ {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &.show-fail {
+        .label {
+            opacity: 0;
+        }
+
+        .s-ico-fail {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .spinner {
+        width: 36px;
+        text-align: center;
+
+        > span {
+            width: 6px;
+            height: 6px;
+            background-color: white;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.2s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.2s infinite ease-in-out both;
+
+            &.bounce1 {
+                -webkit-animation-delay: -0.32s;
+                animation-delay: -0.32s;
+            }
+
+            &.bounce2 {
+                -webkit-animation-delay: -0.16s;
+                animation-delay: -0.16s;
+            }
+        }
+    }
+}

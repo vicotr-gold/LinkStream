@@ -1,0 +1,64 @@
+.UserSearchModal {
+    &.is-searching {
+        .LoadingSpinner {
+            display: block;
+        }
+    }
+
+    &.show-results {
+        .modal-content {
+            padding-bottom: 30px;
+        }
+        .search-results {
+            display: block;
+        }
+        .LoadingSpinner {
+            display: none;
+        }
+    }
+
+    .modal-content {
+        padding-bottom: 60px;
+    }
+
+    .LoadingSpinner {
+        display: none;
+        margin-top: 30px;
+    }
+
+    .SearchInput {
+        input {
+            padding-right: 35px;
+        }
+    }
+
+    .search-results {
+        display: none;
+        .UserAvatar {
+            margin-right: 8px;
+        }
+
+        li {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid $gray-320;
+            align-items: center;
+            &:not(.invite) {
+                cursor: pointer;
+            }
+            &:hover:not(.invite) {
+                background-color: $gray-100;
+            }
+            &:first-child:not(.invite) {
+                margin-top: 15px;
+            }
+            &.invite {
+                border-bottom: 0;
+                padding-bottom: 0;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

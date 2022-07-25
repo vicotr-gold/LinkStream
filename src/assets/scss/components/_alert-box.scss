@@ -1,0 +1,51 @@
+.AlertBox {
+    .modal-dialog {
+        max-width: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-content {
+        border: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .modal-body {
+        padding: 20px 40px !important;
+        text-align: center;
+    }
+
+    .modal-footer {
+        justify-content: space-around !important;
+        margin: 0 !important;
+        padding: 0 10px 20px 10px !important;
+        border: 0;
+        .action-btn {
+            width: 130px;
+        }
+    }
+
+    .alert-close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px;
+        z-index: 1;
+    }
+
+    .alert-title {
+        color: $black;
+        font-size: px2rem(14);
+        font-weight: bold;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+    }
+
+    .alert-message {
+        color: $gray-610;
+        font-size: px2rem(13);
+        line-height: 20px;
+        margin: 0 !important;
+    }
+}

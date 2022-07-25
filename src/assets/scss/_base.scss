@@ -1,0 +1,27 @@
+html {
+    font-size: 14px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: $font-base-family;
+    font-weight: $font-weight-normal;
+    line-height: 1.428571429;
+    color: $font-base-color;
+    background-color: $body-bg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

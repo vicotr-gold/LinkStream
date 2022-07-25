@@ -1,0 +1,38 @@
+.topnav {
+    height: 80px;
+    background-color: $black !important;
+
+    .navbar-brand .logo {
+        height: 34px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .notifs {
+        .badge.count {
+            position: absolute;
+            left: 50%;
+            border: 2px solid black;
+        }
+
+        .notifs-menu {
+            width: 300px;
+            height: 250px;
+            font-size: $font-size-sm !important;
+
+            .ps-container {
+                height: 100%;
+            }
+
+            .btn {
+                height: inherit !important;
+                padding: 0 $spacer !important;
+                font-size: 0.75 * $font-size-base !important;
+                font-weight: normal !important;
+            }
+        }
+    }
+}
